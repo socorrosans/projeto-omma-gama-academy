@@ -1,4 +1,4 @@
-@import 'geral.css';
+@import '../css/geral.css';
 
 h1, h2, p, span, a {
   text-transform: lowercase;
@@ -26,6 +26,11 @@ p {
 
 .receitas {
   grid-column: 1;
+}
+
+.receitas li {
+  font-size: 2rem;
+  line-height: 1.25;
 }
 
 .receitas span {
@@ -83,4 +88,76 @@ iframe {
 
 .receitas-sugeridas img {
   width: 100%;
+}
+
+@media (max-width: 1200px){
+  .main {
+    gap: 1rem;
+  }
+
+  .receitas-sugeridas img {
+    width: 300px;
+  }
+
+  .receitas-sugeridas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .receitas-sugeridas a {
+    font-size: 2rem;
+    box-shadow: none;
+  }
+
+  .receitas-sugeridas h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px){
+  h1 {
+    font-size: 3rem;
+  }
+
+  .receitas img {
+      width: 400px;
+  }
+
+  iframe {
+    width: 400px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main {
+    grid-template-columns: 1fr;
+    padding-inline: 1rem;
+  }
+
+  .main span {
+    margin-block: 1rem;
+  }
+
+  .receitas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .receitas p {
+    text-align: justify;
+    max-width: 40ch;
+  }
+
+  .receitas-sugeridas {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 450px){
+  .receitas img {
+    width: 300px;
+  }
 }
