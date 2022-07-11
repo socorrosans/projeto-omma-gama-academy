@@ -1,0 +1,74 @@
+@import 'geral.css';
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, p, a{
+  text-transform: lowercase;
+}
+
+h1 {
+  color: #FFA000;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-block: 10rem 7rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+a {
+  background-color: #176902;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 1rem 4rem;
+}
+
+h2 {
+  padding-block: 1rem 2rem;
+}
+
+.header div {
+  background: #FFC107;
+}
+
+.nav-lista, .header div {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  background: #FA0;
+}
+
+.nav ul {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-lista {
+  color: #FFF;
+  padding-block: 1.2rem;
+  gap: 5.8rem;
+}
+
+.main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alinhamento {
+  max-width: 1150px;
+  margin-inline: auto;
+}
+
+.imgs-1-3, .imgs-4-6, .imgs-7-9 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
