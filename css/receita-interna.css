@@ -90,6 +90,10 @@ iframe {
   width: 100%;
 }
 
+.footer {
+  margin-top: 16rem;
+}
+
 @media (max-width: 1200px){
   .main {
     gap: 1rem;
@@ -157,7 +161,15 @@ iframe {
 }
 
 @media (max-width: 450px){
-  .receitas img {
+  .receitas img, iframe {
     width: 300px;
+  }
+
+  .receitas li, .receitas p, .receitas span{
+    font-size: 1.6rem;
+  }
+
+  .main {
+    gap: 1rem;
   }
 }

@@ -20,42 +20,13 @@ h2 {
   margin-block: 6rem;
 }
 
-.header div {
-  background: #FFC107;
-}
-
-.nav-lista, .header div {
-  display: flex;
-  justify-content: center;
-}
-
-.nav {
-  background: #FA0;
-}
-
-.nav ul {
-  list-style-type: none;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.nav-lista {
-  color: #FFFFFF;
-  padding-block: 1.2rem;
-  gap: 5.8rem;
-}
-
 .background-titulo {
   background-image: url('../imgs-contato/background-contato.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: right center;
   height: 400px;
   margin-bottom: 10rem;
-}
-
-.alinhamento {
-  max-width: 1150px;
-  margin-inline: auto;
 }
 
 .conteudo {
@@ -110,6 +81,10 @@ button {
   cursor: pointer;
 }
 
+.footer {
+  margin-top: 16rem;
+}
+
   @media (max-width: 1000px){
     h1 {
       font-size: 5rem;
@@ -118,12 +93,9 @@ button {
 
   @media (max-width: 800px) {
     h1 {
-      color: #000000;
-      text-shadow: none;
       text-align: center;
     }
     .background-titulo {
-      background-image: none;
       margin-bottom: 5rem;
       height: auto;
     }
@@ -150,5 +122,9 @@ button {
 
     textarea, button, h2, input, form {
       margin-inline: 1.5rem;
+    }
+
+    button {
+      align-self: center;
     }
   }
